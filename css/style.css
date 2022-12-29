@@ -52,3 +52,54 @@ header .wrapper {
   color: var(--primary-color);
 }
 /* header style end here */
+
+
+/* blog style start her */
+.heading {
+  padding: 30px 0 10px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.blog-list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-item {
+  margin: 10px 0 20px;
+  flex-basis: 30%;
+}
+
+.blog-item img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.subheading {
+  margin-bottom: 15px; 
+  color: var(--blogHeading);
+  text-align: center;
+}
+
+.btn {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.link-btn {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: all .3s ease-in-out;
+}
+
+.link-btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+/* blog style end her */
