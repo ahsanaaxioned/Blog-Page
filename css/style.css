@@ -103,3 +103,54 @@ header .wrapper {
   color: var(--primary-color);
 }
 /* blog style end her */
+
+
+/* footer styling start here */
+footer {
+  padding: 40px 0;
+  background-color: #1c1c1c;
+  color: var(--white);
+}
+
+.social-list {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  margin-left: 3%;
+}
+
+.social-item:nth-child(1) {
+  margin: 0;
+}
+
+.icon {
+  display: block;
+  text-indent: -9999px;
+}
+
+.icon::before{
+  float: left;
+  color: var(--white);
+  font-family: "FontAwesome";
+  font-size: 25px;
+  text-indent: 0;
+  transition: all .3s ease-in-out;
+}
+
+.facebook::before { content: "\f39e"; }
+.twitter::before { content: "\f099"; }
+.instagram::before { content: "\f16d"; }
+.linkedin::before { content:  "\f08c"; }
+
+.icon:hover::before {
+  color: var(--primary-color);
+}
+
+.copy {
+  padding: 20px 0 0;
+  text-align: center;
+}
+/* footer styling end here */
