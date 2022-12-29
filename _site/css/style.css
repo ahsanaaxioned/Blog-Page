@@ -34,10 +34,7 @@ header .wrapper {
   justify-content: space-around;
 }
 
-.list-item {
-  cursor: pointer;
-
-}
+.list-item { cursor: pointer; }
 
 .nav-link {
   color: var(--secondary-color);
@@ -47,6 +44,7 @@ header .wrapper {
   transition: all .3s ease-in-out;
 }
 
+.nav-link.active,
 .nav-link:hover {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -144,10 +142,7 @@ footer {
 .twitter::before { content: "\f099"; }
 .instagram::before { content: "\f16d"; }
 .linkedin::before { content:  "\f08c"; }
-
-.icon:hover::before {
-  color: var(--primary-color);
-}
+.icon:hover::before { color: var(--primary-color); }
 
 .copy {
   padding: 20px 0 0;

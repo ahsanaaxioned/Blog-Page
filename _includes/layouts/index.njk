@@ -1,6 +1,7 @@
 ---
 title: My Blogs
 layout: layouts/base.njk
+permalink: 'index.md'
 ---
 {# header start here #}
  <header>
@@ -8,7 +9,7 @@ layout: layouts/base.njk
  <nav class="navbar">
   <ul class="nav-list">
     <li class="list-item">
-      <a href="#FIXME" class="nav-link" title="Home">Home</a>
+      <a href="index.html" class="nav-link {% if '/' in page.url %}active{% endif %}" title="Home">Home</a>
     </li>
     <li class="list-item">
           <a href="#FIXME" class="nav-link" title="Archive">Archive</a>
