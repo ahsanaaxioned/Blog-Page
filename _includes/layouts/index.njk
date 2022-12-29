@@ -1,0 +1,67 @@
+---
+title: My Blogs
+layout: layouts/base.njk
+---
+{# header start here #}
+ <header>
+  <div class="wrapper">
+ <nav class="navbar">
+  <ul class="nav-list">
+    <li class="list-item">
+      <a href="#FIXME" class="nav-link" title="Home">Home</a>
+    </li>
+    <li class="list-item">
+          <a href="#FIXME" class="nav-link" title="Archive">Archive</a>
+    </li>
+    <li class="list-item">
+          <a href="#FIXME" class="nav-link" title="About">About</a>
+    </li>
+  </ul>
+ </nav>
+ </div>
+ </header>
+ {# header end here #}
+
+ {# blog section  start here #}
+ <section class="blog">
+  <div class="wrapper">
+    <h1 class="heading">My Blog List</h1>
+    <ul class="blog-list">
+      {%- for posts in collections.post -%}
+      <li class="blog-item">
+        <h2 class="subheading">{{posts.data.title}}</h2>
+        <figure>
+          <img src={{posts.data.imageSrc}} alt="Blog Image">
+        </figure>
+        <div class="btn">
+            <a href= {{posts.data.anchor}} class="link-btn" title="Learn More">{{posts.data.anchor}}</a>
+          </div>
+        </li>
+        {%- endfor -%}
+    </ul>
+  </div>
+ </section>
+  {# blog section  end here #}
+
+  {# footer start here #}
+  <footer>
+    <div class="wrapper">
+    <h3 class="footer-heading">Do you Have Any Doubts?..Then Reach Out Us.</h3>
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="#FIXME" class="icon facebook " title="Facebook">Facebook</a>
+      </li>
+      <li class="social-item">
+        <a href="#FIXME" class="icon twitter " title="Twitter">twitter</a>
+      </li>
+      <li class="social-item">
+        <a href="#FIXME" class="icon instagram" title="Instagram">Instagram</a>
+      </li>
+      <li class="social-item">
+        <a href="#FIXME" class="icon linkedin" title="Linkedin">linkedin</a>
+      </li>
+    </ul>
+    <p class="copy">Copyright &#169; All rights reserved.</p>
+    </div>
+  </footer>
+  {# footer end here #}
