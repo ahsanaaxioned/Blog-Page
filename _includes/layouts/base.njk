@@ -11,6 +11,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+       {# {% block header %}{% endblock %} #}
+       {% include "layouts/header.njk" %}
         {{content | safe }}
     </body> 
     </html>

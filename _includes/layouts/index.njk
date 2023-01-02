@@ -1,18 +1,19 @@
 ---
 title: My Blogs
 layout: layouts/base.njk
-permalink: 'index.md'
 ---
 {# header start here #}
- <header>
+
+{# {% block header %}  {% endblock %} #}
+ {# <header>
   <div class="wrapper">
  <nav class="navbar">
   <ul class="nav-list">
     <li class="list-item">
-      <a href="index.html" class="nav-link {% if '/' in page.url %}active{% endif %}" title="Home">Home</a>
+      <a href="index.html" class="nav-link {{ 'active' if 'index.md' in page.url }}" title="Home">Home</a>
     </li>
     <li class="list-item">
-          <a href="#FIXME" class="nav-link" title="Archive">Archive</a>
+          <a href="archive.html" class="nav-link {{ 'active' if 'archive.html' in page.url }}" title="Archive">Archive</a>
     </li>
     <li class="list-item">
           <a href="#FIXME" class="nav-link" title="About">About</a>
@@ -20,7 +21,7 @@ permalink: 'index.md'
   </ul>
  </nav>
  </div>
- </header>
+ </header> #}
  {# header end here #}
 
  {# blog section  start here #}
@@ -35,7 +36,7 @@ permalink: 'index.md'
           <img src={{posts.data.imageSrc}} alt="Blog Image">
         </figure>
         <div class="btn">
-            <a href= {{posts.data.anchor}} class="link-btn" title="Learn More">{{posts.data.anchor}}</a>
+            <a href= "Blog1" class="link-btn" title="Learn More">{{posts.data.anchor}}</a>
           </div>
         </li>
         {%- endfor -%}
