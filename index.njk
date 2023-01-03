@@ -1,0 +1,27 @@
+---
+title: My Blogs
+layout: layouts/base.njk
+---
+ {# blog section  start here #}
+ <section class="blog">
+  <div class="wrapper">
+    <h1 class="heading">My Blog List</h1>
+    <ul class="blog-list">
+      {%- for posts in collections.post -%}
+      <li class="blog-item">
+        <h2 class="subheading">{{posts.data.title}}</h2>
+        <figure>
+          <img src={{posts.data.imageSrc}} alt="Blog Image">
+        </figure>
+        <p class="blog-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore exercitationem ducimus quod modi quam harum voluptatum deserunt accusamus recusandae.</p>
+        <div class="btn">
+            <a  class="link-btn" title="Learn More" href= {{posts.url}} >{{posts.data.anchor}}</a>
+          </div>
+        </li>
+        {%- endfor -%}
+    </ul>
+  </div>
+ </section>
+  {# blog section  end here #}
+
+  

@@ -53,10 +53,21 @@ header .wrapper {
 
 
 /* blog style start her */
-.heading {
+h1{
   padding: 30px 0 10px;
   color: var(--primary-color);
   text-align: center;
+}
+
+p {
+  padding: 40px 0;
+  margin: 0 10%;
+  color: var(--blogHeading);
+}
+
+img {
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .blog-list {
@@ -100,7 +111,19 @@ header .wrapper {
   background-color: var(--white);
   color: var(--primary-color);
 }
+
+.blog-para {
+  margin: 0;
+}
 /* blog style end her */
+
+/* archive style start here */
+.blog { padding: 50px 0; }
+
+.archive-content {
+  margin: 30px 0;
+  font-size: 25px;
+}
 
 
 /* footer styling start here */

@@ -4,13 +4,13 @@
  <nav class="navbar">
   <ul class="nav-list">
     <li class="list-item">
-      <a href="index.html" class="nav-link {{ 'active' if '/' in page.url }}" title="Home">Home</a>
+      <a href="/" class="nav-link {{ 'active' if '' in page.url }}" title="Home">Home</a>
     </li>
     <li class="list-item">
-          <a href="archive.html" class="nav-link {{ 'active' if 'archive.html' in page.url }}" title="Archive">Archive</a>
+          <a href="/archive/" class="nav-link {{ 'active' if '/archive/' in page.url }}" title="Archive">Archive</a>
     </li>
     <li class="list-item">
-          <a href="#FIXME" class="nav-link" title="About">About</a>
+          <a href="/about/" class="nav-link {{ 'active' if '/about/' in page.url }}" title="About">About</a>
     </li>
   </ul>
  </nav>
