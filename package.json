@@ -13,5 +13,9 @@
     "@11ty/eleventy": "^1.0.2",
     "chokidar": "^3.5.3",
     "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.6"
   }
 }
